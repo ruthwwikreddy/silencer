@@ -1,6 +1,6 @@
 // app/api/readings/route.ts
 import { NextResponse } from 'next/server';
-import SerialPort from 'serialport';
+import { SerialPort } from 'serialport';
 import { ReadlineParser } from '@serialport/parser-readline';
 
 // Adjust this to match your Arduino's serial port (e.g., /dev/tty.usbmodem14101)
