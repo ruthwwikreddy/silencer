@@ -91,25 +91,14 @@ void loop() {
     highestReduction = reductionPct;
 
   // Emit JSON for the web app
+  // Emit JSON for the web app
   Serial.print("{\"before\":");
   Serial.print(ppmBefore);
   Serial.print(",\"after\":");
   Serial.print(ppmAfter);
   Serial.print(",\"reduction\":");
   Serial.print(reductionPct);
-  Serial.println(" %");
-
-  Serial.println("---- Highest Recorded Values ----");
-  Serial.print("Highest Before (ppm): ");
-  Serial.println(highestBefore);
-
-  Serial.print("Highest After  (ppm): ");
-  Serial.println(highestAfter);
-
-  Serial.print("Highest Reduction (%): ");
-  Serial.println(highestReduction);
-
-  Serial.println("---------------------------------\n");
+  Serial.println("}");
 
   delay(1000);
 }
